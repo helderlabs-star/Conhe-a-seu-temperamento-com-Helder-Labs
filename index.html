@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>A Arte da Procrastinação – Helder Labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#f4f1ea" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-title">A Arte da Procrastinação – Helder Labs</span>
+        <span class="brand-subtitle">Este é Seu Manual de Funcionamento</span>
+      </div>
+      <div class="book-tag">Este é o Seu Temperamento, Saiba Controlá-lo!</div>
+    </header>
+
+    <main class="app-main">
+      <section id="quiz-screen" class="card active">
+        <div class="question-meta">
+          <span id="question-index">Pergunta 1 de 40</span>
+          <span id="dimension-label">Resultado Após a Última Resposta</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+
+        <div class="question-text" id="question-text"></div>
+
+        <div class="answer-buttons">
+          <button id="btn-sim" class="btn primary">SIM</button>
+          <button id="btn-nao" class="btn outline">NÃO</button>
+        </div>
+
+        <p class="hint">
+          Toque em <strong>SIM</strong> ou <strong>NÃO</strong> para avançar.
+        </p>
+      </section>
+
+      <section id="result-screen" class="card">
+        <h2>Mapa dos seus Temperamentos</h2>
+
+        <div class="scores-grid">
+          <div class="score-card colerico">
+            <span class="score-label">COLÉRICO</span>
+            <span id="score-colerico" class="score-value">0</span>
+            <span class="score-dim">Reatividade</span>
+          </div>
+          <div class="score-card sanguineo">
+            <span class="score-label">SANGUÍNEO</span>
+            <span id="score-sanguineo" class="score-value">0</span>
+            <span class="score-dim">Sociabilidade</span>
+          </div>
+          <div class="score-card melancolico">
+            <span class="score-label">MELANCÓLICO</span>
+            <span id="score-melancolico" class="score-value">0</span>
+            <span class="score-dim">Análise</span>
+          </div>
+          <div class="score-card fleumatico">
+            <span class="score-label">FLEUMÁTICO</span>
+            <span id="score-fleumatico" class="score-value">0</span>
+            <span class="score-dim">Estabilidade</span>
+          </div>
+        </div>
+
+        <div class="result-summary">
+          <p><strong>Temperamento dominante:</strong> <span id="dominant-type">–</span></p>
+          <p><strong>Temperamento secundário:</strong> <span id="secondary-type">–</span></p>
+        </div>
+
+        <div class="interpretation" id="interpretation-text"></div>
+
+        <div class="actions">
+          <button id="btn-refazer" class="btn primary">Refazer teste</button>
+        </div>
+
+        <div class="notes">
+          <p>Instrumento de autoconhecimento inspirado no seu quiz em planilha. Não substitui avaliação clínica.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
